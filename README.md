@@ -27,8 +27,9 @@ cd your-repo-name
 pip install -r requirements.txt
 ```
 ### 3. Set Up Environment Variables
+```
 GOOGLE_API_KEY=your_google_ai_studio_api_key
-
+```
 ### 4. Run Migrations
 ```
 python manage.py migrate
@@ -40,8 +41,9 @@ python manage.py runserver
 ```
 
 ## API Endpoint
+```
 POST /api/analyze/
-
+```
 ## LLM Provider
 Google Gemini API
 
