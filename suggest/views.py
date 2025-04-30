@@ -42,7 +42,7 @@ class AnalyzeView(APIView):
         serializer = RequestSerializer(data=request.data)
         if serializer.is_valid():
             query = serializer.validated_data['query']
-            prompt = f"Analyze this message '{query}'. What is the tone (e.g., Happy, Urgent)? What is the intent like Order Food, or Receive Assistance etc (for example: if the message like if its hungry or want for a food give intent as 'Order Food')? Reply as JSON. "
+            prompt = f"Analyze this message '{query}'. What is the tone (e.g., Happy, Urgent)? What is the intent like Order Food, or Receive Assistance etc like if the message is 'i am hungry' or 'i want any food' give intent as 'Order Food'? Reply as JSON. "
             try:
                 response = client.models.generate_content(
                     model="gemini-2.0-flash",
