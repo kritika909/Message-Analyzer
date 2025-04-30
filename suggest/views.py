@@ -25,7 +25,7 @@ ACTIONS = {
 def suggest_actions(tone, intent):
     suggestions = []
 
-    if intent.lower() == "eat food":
+    if intent.lower() == "order food":
         suggestions.append({"action_code":"ORDER_FOOD", "display_text":ACTIONS["ORDER_FOOD"]})
         suggestions.append({"action_code":"FIND_RECIPE", "display_text":ACTIONS["FIND_RECIPE"]})
     elif intent.lower() == "receive assistance":
