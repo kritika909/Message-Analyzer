@@ -3,3 +3,5 @@ djangorestframework>=3.14
 psycopg2-binary>=2.9
 google-genai
 python-dotenv>=1.0.0
+gunicorn
+dj-database-url
